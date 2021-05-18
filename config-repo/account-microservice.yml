@@ -1,2 +1,4 @@
 ---
-username-to-greet: Benjamin
+account-microservice:
+  username-to-greet: Benjamin
+username-to-greet: Benjamin Root
