@@ -2,8 +2,4 @@
 
 set -e
 
-pushd "account-microservice"
-cf push &
-popd
-
-wait
+cf push

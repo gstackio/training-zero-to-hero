@@ -4,7 +4,7 @@ applications:
   memory: 750M
   instances: 1
   random_route: true
-  path: build/libs/account-microservice-1.0.0.jar
+  path: account-microservice/build/libs/account-microservice-1.0.0.jar
   env:
     DEBUG: "true"
     JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
