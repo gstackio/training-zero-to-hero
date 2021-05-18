@@ -2,7 +2,7 @@
 
 set -e
 
-pushd acme-financial-account-microservice
+pushd "account-microservice"
 cf push &
 popd
 

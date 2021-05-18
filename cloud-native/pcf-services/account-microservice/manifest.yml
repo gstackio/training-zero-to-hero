@@ -1,10 +1,10 @@
 ---
 applications:
-- name: acme-financial-account
+- name: account-microservice
   memory: 750M
   instances: 1
-  path: build/libs/acme-financial-account-microservice-1.0.0.jar
-  services:
-    - zipkin_span_stream
+  random_route: true
+  path: build/libs/account-microservice-1.0.0.jar
   env:
     DEBUG: "true"
+    JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
