@@ -2,6 +2,7 @@ package io.spring.cloud.sleuth.docs.accountmicroservice;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +19,14 @@ public class Application {
 
 	private static final Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
+	@Value( "${certificat-client:too-bad-not-found}" )
+	private String clientCertificate;
+
 	@RequestMapping("/action")
 	public String accountMicroServiceController() throws InterruptedException {
 		Thread.sleep(random.nextInt(1000));
-		log.info("Hello from Acme Financial's Account Microservice");
-		return "Hello from Acme Financial's Account Microservice";
+		log.info("Hello from Acme Financial's Account Microservice" + ", clientCertificate=[" + clientCertificate + "]");
+		return "Hello from Acme Financial's Account Microservice" + ", clientCertificate=[" + clientCertificate + "]";
 	}
 
 	@RequestMapping("/")

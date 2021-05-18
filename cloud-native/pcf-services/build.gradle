@@ -79,6 +79,8 @@ configure(subprojects) {
         }
 
         runtime 'org.aspectj:aspectjweaver'
+
+        compile "io.pivotal.cfenv:java-cfenv-boot:${javaCfEnvVersion}"
     }
 
     wrapper {
