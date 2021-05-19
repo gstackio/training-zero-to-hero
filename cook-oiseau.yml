@@ -1,1 +1,3 @@
-cook.special=Canard laqué
+---
+cook:
+  special: Canard laqué

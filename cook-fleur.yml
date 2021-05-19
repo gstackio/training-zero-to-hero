@@ -1,1 +1,3 @@
-cook.special=Fleur de courgette
+---
+cook:
+  special: Fleur de courgette

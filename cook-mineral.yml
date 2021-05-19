@@ -1,1 +1,4 @@
-cook.special=Granit en croute
+---
+cook:
+  special: Granit en croute
+

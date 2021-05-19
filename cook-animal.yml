@@ -1,1 +1,3 @@
-cook.special=Sanglier roti
+---
+cook:
+  special: Sanglier roti
