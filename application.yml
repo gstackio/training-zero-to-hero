@@ -1,5 +1,0 @@
----
-account-microservice:
-  username-to-greet: Benjamin
-
-usernameToGreet: Benjamin
